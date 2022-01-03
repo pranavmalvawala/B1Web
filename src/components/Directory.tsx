@@ -15,5 +15,5 @@ export const Directory: React.FC = () => (
         <div className="col-lg-3"><img src="/images/phone-directory.png" alt="B1 Church App" className="img-fluid" /></div>
       </div>
     </div>
-  </div >
+  </div>
 )

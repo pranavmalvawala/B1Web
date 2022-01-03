@@ -1,6 +1,6 @@
 import React from "react";
 import { Home } from "./Home";
-import { Switch, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import ReactGA from "react-ga";
 import { EnvironmentHelper } from "./helpers";
 import { Login } from "./Login";
@@ -14,9 +14,9 @@ export const Routing: React.FC = () => {
   React.useEffect(() => { if (EnvironmentHelper.GoogleAnalyticsTag !== "") ReactGA.pageview(location.pathname + location.search); }, [location]);
 
   return (
-    <Switch>
-      <Route path="/login"><Login /></Route>
-      <Route path="/"><Home /></Route>
-    </Switch>
+    <Routes>
+      <Route path="/login" element={<Login />} />
+      <Route path="/" element={<Home />} />
+    </Routes>
   );
 }

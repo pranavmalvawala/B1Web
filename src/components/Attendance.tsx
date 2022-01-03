@@ -15,5 +15,5 @@ export const Attendance: React.FC = () => (
 
       </div>
     </div>
-  </div >
+  </div>
 )

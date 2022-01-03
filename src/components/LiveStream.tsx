@@ -15,5 +15,5 @@ export const LiveStream: React.FC = () => (
 
       </div>
     </div>
-  </div >
+  </div>
 )
