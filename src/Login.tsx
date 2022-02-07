@@ -16,7 +16,7 @@ export const Login: React.FC = (props: any) => {
   if (!auth) auth = "";
 
   const handleLogin = () => {
-    const url = EnvironmentHelper.SubUrl.replace("{subDomain}", UserHelper.currentChurch.subDomain) + "/login?jwt=" + UserHelper.currentChurch.jwt;
+    const url = EnvironmentHelper.SubUrl.replace("{key}", UserHelper.currentChurch.subDomain) + "/login?jwt=" + UserHelper.currentChurch.jwt;
     window.location.href = url;
   }
 
