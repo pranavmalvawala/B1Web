@@ -35,7 +35,7 @@ export class EnvironmentHelper {
     EnvironmentHelper.AccessApi = "https://accessapi.staging.churchapps.org";
     EnvironmentHelper.B1Api = "https://api.staging.b1.church";
     EnvironmentHelper.MembershipApi = "https://membershipapi.staging.churchapps.org";
-    EnvironmentHelper.SubUrl = "https://{key}.staging.streaminglive.church";
+    EnvironmentHelper.SubUrl = "https://{key}.staging.b1.church";
     EnvironmentHelper.AccountsAppUrl = "https://accounts.staging.churchapps.org";
     EnvironmentHelper.GoogleAnalyticsTag = "";
   }
@@ -45,7 +45,7 @@ export class EnvironmentHelper {
     EnvironmentHelper.AccessApi = "https://accessapi.churchapps.org";
     EnvironmentHelper.B1Api = "https://api.b1.church";
     EnvironmentHelper.MembershipApi = "https://membershipapi.churchapps.org";
-    EnvironmentHelper.SubUrl = "https://{key}.streaminglive.church";
+    EnvironmentHelper.SubUrl = "https://{key}.b1.church";
     EnvironmentHelper.AccountsAppUrl = "https://accounts.churchapps.org";
     EnvironmentHelper.GoogleAnalyticsTag = "UA-164774603-10";
   }
