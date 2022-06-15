@@ -1,4 +1,4 @@
-export { ErrorMessages, InputBox, PasswordField } from "../appBase/components";
+export { ErrorMessages, InputBox } from "../appBase/components";
 
 export * from "../helpers"
 export { About } from "./About"
@@ -9,5 +9,3 @@ export { HomeHero } from "./HomeHero"
 export { HomeRegister } from "./HomeRegister"
 export { Header } from "./Header"
 export { LiveStream } from "./LiveStream"
-export { SelectChurchModal } from "./SelectChurchModal"
-
