@@ -4,6 +4,7 @@ import UserContext from "./UserContext";
 import { LoginPage } from "./appBase/pageComponents/LoginPage";
 import { EnvironmentHelper } from "./helpers"
 import { UserHelper } from "./appBase/helpers"
+import { Box } from "@mui/material";
 
 export const Login: React.FC = (props: any) => {
   const [cookies] = useCookies(["jwt"]);
@@ -20,6 +21,10 @@ export const Login: React.FC = (props: any) => {
     window.location.href = url;
   }
 
-  return (<LoginPage auth={auth} context={context} jwt={jwt} appName="B1" loginSuccessOverride={handleLogin} />);
+  return (
+    <Box style={{ backgroundColor: "#EEEEEE", minHeight: "100vh" }}>
+      <LoginPage auth={auth} context={context} jwt={jwt} appName="B1" loginSuccessOverride={handleLogin} />
+    </Box>
+  );
 
 };
