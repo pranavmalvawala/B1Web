@@ -22,7 +22,7 @@ export const Login: React.FC = (props: any) => {
   }
 
   return (
-    <Box style={{ backgroundColor: "#EEEEEE", minHeight: "100vh" }}>
+    <Box sx={{ backgroundColor: "#EEEEEE", minHeight: "100vh", padding: "0 15px" }}>
       <LoginPage auth={auth} context={context} jwt={jwt} appName="B1" loginSuccessOverride={handleLogin} />
     </Box>
   );
